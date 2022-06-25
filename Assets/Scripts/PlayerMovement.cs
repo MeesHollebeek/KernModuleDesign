@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public SpawnManager spawnManager;
 
     public CharacterController controller;
 
@@ -46,9 +45,5 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        spawnManager.SpawnTriggerEnterd();
-    }
 }
 
