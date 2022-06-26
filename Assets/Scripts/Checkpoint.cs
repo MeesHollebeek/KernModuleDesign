@@ -7,6 +7,10 @@ public class Checkpoint : MonoBehaviour
     [SerializeField] private Transform Trigger;
     [SerializeField] private GameObject OBJ;
     [SerializeField] private GameObject Next;
+    [SerializeField] private GameObject score;
+    [SerializeField] private GameObject Newscore;
+    [SerializeField] private GameObject Hint;
+    [SerializeField] private GameObject NewHint;
 
 
 
@@ -33,7 +37,10 @@ public class Checkpoint : MonoBehaviour
             Debug.Log("jaa");
             OBJ.SetActive(false);
             Next.SetActive(true);
-
+            score.SetActive(false);
+            Newscore.SetActive(true);
+            Hint.SetActive(false);
+            NewHint.SetActive(true);
         }
 
     }
